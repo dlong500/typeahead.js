@@ -1,5 +1,5 @@
 {
-  "name": "corejs-typeahead",
+  "name": "dlong-corejs-typeahead",
   "description": "fast and fully-featured autocomplete library",
   "keywords": [
     "typeahead",
@@ -35,7 +35,7 @@
     }
   ],
   "license": "MIT",
-  "dependencies": {
+  "peerDependencies": {
     "jquery": ">=1.11"
   },
   "devDependencies": {
@@ -69,7 +69,8 @@
     "yiewd": "^0.6.0"
   },
   "scripts": {
-    "test": "bower install && ./node_modules/karma/bin/karma start --single-run --browsers PhantomJS"
+    "test": "bower install && ./node_modules/karma/bin/karma start --single-run --browsers PhantomJS",
+    "prepare": "grunt build"
   },
   "version": "1.2.1",
   "main": "dist/typeahead.bundle.js"
